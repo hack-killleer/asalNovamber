@@ -1,7 +1,32 @@
-.bg-gray-50 {
-    
-    background-color: white;
+/* Add custom CSS styles below */ 
+body.index {
+    background: url(https://i.ibb.co/sHB965w/bc.jpg);
+    background-size: cover;
+    background-repeat: repeat-y;
 }
+.top-navbar {
+    background: white;
+}
+.grid.grid-cols-\[repeat\(2\,minmax\(0\,1fr\)\)\].md\:grid-cols-\[repeat\(3\,minmax\(0\,1fr\)\)\].gap-4.sm\:gap-6.xl\:gap-8 {
+    display: flex;
+    flex-wrap:wrap;
+}
+.s-block--features__item {
+    width: 23% !important;
+        background: transparent;
+}
+.s-block--features__item a.banner-entry.square-photos.has-overlay.with-hover {
+    width: auto !important;
+    height: unset !important;
+}
+.store-footer__inner {
+    background: #be8b4a;
+}
+.s-block--features__item h2,.s-block--features__item p{
+color:#fff;
+}
+ 
+ 
 [dir=rtl] salla-slider.photos-slider .swiper {
     padding-right: 0rem !important;
 }
@@ -49,6 +74,9 @@ section:first-of-type.s-block.s-block--photos-slider {
     
 /* Media Query for Mobile Devices */ 
  @media (max-width: 480px) { 
+      .s-block--features__item {
+    width: 46% !important;
+}       
            .banner-entry {
     width: 48%;
      height: 130px !important;
@@ -58,8 +86,11 @@ section:first-of-type.s-block.s-block--photos-slider {
 /* Media Query for low resolution  Tablets, Ipads */ 
        
 @media (min-width: 481px) and (max-width: 767px) { 
+     .s-block--features__item {
+    width: 46% !important;
+}
  .banner-entry {
-    width: 23%;
+    width: 22%;
     height: 177px !important;
     background: #f9fafb00;
     }
